@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Handles SIGTERM signal
-trap 'echo "I am invincible!!!"' SIGTERM
+# This script displays 'To infinity and beyond' 
+# Expectations: In between each iteration of the loop, add a sleep 2
 
-while true; do
+trap 'echo "I am invincible!!!"' SIGTERM
+while true
+do
     echo "To infinity and beyond"
     sleep 2
 done
